@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"path": "C:\\temp\\reusable-firmware-dev-master\\Materials\\hal"
+		},
+		{
+			"path": "C:\\CypressDev\\PSoc6 projects\\GPIO_drive_withHAL\\GPIO_drive.cydsn"
+		},
+		{
+			"path": "C:\\CypressDev\\PSoc6 projects\\Timer_withHAL\\Timer_withHAL.cydsn"
+		},
+		{
+			"path": "C:\\Xdev\\minized_project1\\minized_project1.sdk"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"xil_io.h": "c",
+			"xscugic.h": "c",
+			"xtmrctr.h": "c",
+			"xgpio.h": "c",
+			"psgpio.h": "c",
+			"psgpio_cfg.h": "c",
+			"nanokernel_system.h": "c",
+			"port_gpio.h": "c",
+			"port_gpiotable.h": "c",
+			"stm32f4xx_hal_gpio.h": "c",
+			"stm32f4xx_hal.h": "c",
+			"cyfitter_sysint.h": "c",
+			"project.h": "c",
+			"pl_gpio_cfg.h": "c",
+			"cyip_peri.h": "c",
+			"cy_sysclk.h": "c"
+		}
+	}
+}
