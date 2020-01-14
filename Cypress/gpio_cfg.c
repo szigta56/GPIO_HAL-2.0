@@ -18,9 +18,8 @@ const GPIO_CFG_t GpioConfigTable[]=
 //    number    number  direction   state       type            mode
 
     { PORT6,   PIN3,   OUTPUT,    PIN_LOW,      INTR_NONE,     STRONG_DRIVE   },
-    { PORT0,   PIN4,   INPUT,     PIN_HIGH,     INTR_NONE,     HIGH_IMPEDANCE    },
-  //  { PORT6,   PIN2,   INPUT,    PIN_HIGH,    INTR_NONE,     RES_PULL_UP   },
-    { PORT7,   PIN1,   OUTPUT,     PIN_LOW,     INTR_NONE,     STRONG_DRIVE }
+    { PORT0,   PIN4,   INPUT,     PIN_HIGH,     INTR_RISING,     HIGH_IMPEDANCE },
+    { PORT7,   PIN1,   OUTPUT,    PIN_LOW,     INTR_NONE,     STRONG_DRIVE   }
      
 };
 

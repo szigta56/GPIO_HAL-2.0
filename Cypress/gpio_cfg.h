@@ -9,13 +9,11 @@
  *
  * ========================================
 */
-#ifndef GPIO_CFG_H
-#define GPIO_CFG_H
 
 #include <stdint.h>
 
 #define  CyDelay                   Cy_SysLib_Delay
-#define CONFIG_ELEMENTS  3
+#define GPIO_CONFIG_ELEMENTS  3
 
 // *****************REGISTER OFFSETS FROM GPIO BASEADDRESSES************************
 
@@ -55,9 +53,8 @@ typedef enum
     INTR_NONE,
     INTR_RISING,
     INTR_FALLING,
-    INTR_BOTH,
-    INTR_MODE_MAX
-}Intr_mode_t;
+    INTR_BOTH
+}Gpio_Intr_mode_t;
 
 typedef enum
 {
@@ -72,7 +69,7 @@ typedef enum
     DRIVE_MODE_MAX
 }Drive_mode_t;
 
-//*******************STRUCTURE OF REGISTERS*******************************************
+//******************************STRUCTURE OF REGISTERS*******************************************
 
 typedef struct 
 {
@@ -98,11 +95,13 @@ typedef struct
     Pin_num_t       Pin;
     Pin_mode_t      Direction;
     Pin_state_t     State;
-    Intr_mode_t     Interrupt;
+    Gpio_Intr_mode_t     Interrupt;
     Drive_mode_t    DriveMode;
 } GPIO_CFG_t;
 
 const GPIO_CFG_t *const Gpio_GetConfig(void);
 
-#endif
+
+
+
 /* [] END OF FILE */
